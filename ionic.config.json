@@ -1,0 +1,7 @@
+{
+  "name": "NewsAggregator",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

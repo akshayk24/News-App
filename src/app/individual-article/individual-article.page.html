@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="11">
+          <div>
+            <img class="logo" src="../../assets/icon/logo.png" alt="logo">
+          </div>
+        </ion-col>
+        <!-- <ion-col class="ion-align-self-center">
+          <div>
+            <img class="back" src="../../assets/icon/back.png" alt="back" (click)="onBack()">
+          </div>
+        </ion-col> -->
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="{{sharedNewsItem.urlToImage}}" alt="news-img">
+    <ion-card-header>
+      <ion-card-subtitle>{{sharedNewsItem.author}}</ion-card-subtitle>
+      <ion-card-title>{{sharedNewsItem.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>{{sharedNewsItem.description}}</ion-card-content>
+    <ion-card-content>{{sharedNewsItem.publishedAt | date:'medium'}}</ion-card-content>
+  </ion-card>
+</ion-content>
